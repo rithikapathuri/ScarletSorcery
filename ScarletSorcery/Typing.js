@@ -1,6 +1,6 @@
 const texts = ["Welcome to Scarlet Sorcery!", 
 "In this thrilling adventure, you will find yourself transported from the familiar halls of Rutgers into the enchanting world of Hogwarts.", 
-"As you navigate through this magical realm, you must complete a series of minigames to rescue the revered headmaster Dumbledore from the evil clutches dementors.", 
+"As you navigate through this magical realm, you must complete a series of minigames to rescue the revered headmaster Dumbledore from the evil clutches of the dementors.", 
 "Embark on this extraordinary journey and prove yourself as you strive to overcome obstacles and unravel mysteries in the face of darkness.", 
 "The fate of Hogwarts rests in your hands!"];
 const speeds = [3000, 10000, 10000, 10000, 5000];
@@ -42,5 +42,5 @@ function type(){
 }
 
 function callHTML(){
-   location.replace("index.html");
+   location.replace("loading.html");
 }
