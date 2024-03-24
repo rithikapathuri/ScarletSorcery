@@ -3,12 +3,75 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+#dumbledore{
+    position: absolute;
+    top: 75%;
+	left: 10%;
+    height: 150px;
+    width: auto;
+    display: inline-block;
+    animation: animateCharacter 2s infinite linear;
+}
+
+#harry{
+    position: absolute;
+    top: 75%;
+	left: 27%;
+    height: 150px;
+    width: auto;
+    display: inline-block;
+    animation: animateCharacter 2s infinite linear;
+}
+
+#voldemort{
+    position: absolute;
+    top: 75%;
+	left: 44.5%;
+    height: 150px;
+    width: auto;
+    display: inline-block;
+    animation: animateCharacter 2s infinite linear;
+}
+
+#hermione{
+    position: absolute;
+    top: 75%;
+	left: 61%;
+    height: 150px;
+    width: auto;
+    display: inline-block;
+    animation: animateCharacter 2s infinite linear;
+}
+
+#ron{
+    position: absolute;
+    top: 75%;
+    left: 78%;
+    height: 150px;
+    width: auto;
+    display: inline-block;
+    animation: animateCharacter 2s infinite linear;
+}
+
+@keyframes animateCharacter {
+    0%{
+        transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transforM: scale(1);
+    }
+  }
+
 section{
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: url(hogwarts.jpeg);
+    background: url(hogwarts.png);
     background-size: cover;
     animation: animateBackground 10% linear infinite;
 }
@@ -52,46 +115,9 @@ section .load span::before{
 }
 @keyframes animate{
     0%{
-        transforM: scale(1);
+        transform: scale(1);
     }
     80%,100%{
         transform: scale(0);
-    }
-}
-
-
-.containerparticles{
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-}
-
-.particles{
-    position: relative;
-    display: flex;
-}
-
-.particles span{
-    position: relative;
-    width: 10px;
-    height: 10px;
-    background: #d0d0db;
-    border-radius: 50%;
-    box-shadow: 0 0 0 1px #bdbdc9, 0 0 5px #aeaebd, 0 0 12px #9797a6;
-    margin: 25px;
-    animation: animateParticles 30s linear infinite;
-    animation-duration: calc(125s/var(--i));
-}
-.particles span:nth-child(even){
-    background: #d0d0db;
-    box-shadow: 0 0 0 1px #bdbdc9, 0 0 5px #aeaebd, 0 0 12px #9797a6;
-}
-@keyframes animateParticles{
-    0%{
-        transform: translateY(100vh) scale(0);
-    }
-    100%{
-        transform: translateY(-10vh) scale(1);
     }
 }

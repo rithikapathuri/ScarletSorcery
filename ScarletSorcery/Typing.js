@@ -1,10 +1,12 @@
-const texts = ["Welcome to Scarlet Sorcery!", 
+const texts = [
+"Welcome to Scarlet Sorcery!",
 "In this thrilling adventure, you will find yourself transported from the familiar halls of Rutgers into the enchanting world of Hogwarts.", 
-"As you navigate through this magical realm, you must complete a series of minigames to rescue the revered headmaster Dumbledore from the evil clutches of the dementors.", 
+"As you navigate through this magical realm, you must complete a series of minigames to escape from the evil clutches of he who must not be named.", 
+"blank",
 "Embark on this extraordinary journey and prove yourself as you strive to overcome obstacles and unravel mysteries in the face of darkness.", 
+"blank",
 "The fate of Hogwarts rests in your hands!"];
-const speeds = [3000, 10000, 10000, 10000, 5000];
-var charSpeed = 50;
+var charSpeed = 30;
 var iChar = 0;
 var iArray = 0;
 var current = "";
@@ -19,7 +21,7 @@ function typewriter(){
       iChar = 0;
       typedLength = 0;
       currline = 0;
-      setTimeout(typewriter, speeds[iArray-1]);
+      setTimeout(typewriter, 50*current.length);
       document.getElementById("story0").innerHTML = "";
       document.getElementById("story1").innerHTML = "";
    }
