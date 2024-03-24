@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: url(opening.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 1900px;
+}
+
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    color: white;
+    font-family:'Courier New', Courier, monospace;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#story0{
+    height: 60px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: large;
+    font-family:'Courier New', Courier, monospace;
+    text-align: center;
+    line-height: 1650px;
+}
+
+#story1{
+    height: 60px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: large;
+    font-family:'Courier New', Courier, monospace;
+    text-align: center;
+    line-height: 1670px;
+}
+
+#knightmare{
+    height: 60px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 50px;
+    color: white;
+    font-family:'Courier New', Courier, monospace;
+    text-align: center;
+    line-height: 400px;
+}
+
+.containerbutton{
+    position: relative;
+}
+
+#buttonstart{
+    position: absolute;
+    left: 50%;
+    top: 700px;
+    transform: translateX(-50%);
+    font-size: large;
+    color: white;
+    font-family:'Courier New', Courier, monospace;
+    text-align: center;
+    background:none
+}
+
+.containerparticles{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.particles{
+    position: relative;
+    display: flex;
+}
+
+.particles span{
+    position: relative;
+    width: 10px;
+    height: 10px;
+    background: #d0d0db;
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px #bdbdc9, 0 0 5px #aeaebd, 0 0 12px #9797a6;
+    margin: 25px;
+    animation: animate 30s linear infinite;
+    animation-duration: calc(125s/var(--i));
+}
+.particles span:nth-child(even){
+    background: #d0d0db;
+    box-shadow: 0 0 0 1px #bdbdc9, 0 0 5px #aeaebd, 0 0 12px #9797a6;
+}
+@keyframes animate{
+    0%{
+        transform: translateY(100vh) scale(0);
+    }
+    100%{
+        transform: translateY(-10vh) scale(1);
+    }
+}
