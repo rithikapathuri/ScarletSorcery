@@ -11,7 +11,7 @@ var current = "";
 var typedLength = 0;
 var currline = 0;
 
-function typewriter() {
+function typewriter(){
    if(iArray < texts.length){
       current = texts[iArray];
       type();
@@ -23,9 +23,12 @@ function typewriter() {
       document.getElementById("story0").innerHTML = "";
       document.getElementById("story1").innerHTML = "";
    }
+   else{
+      setTimeout(callHTML, 3000);
+   }
 }
 
-function type() {
+function type(){
    if(iChar < current.length){
       if(typedLength >= 90 && current.charAt(iChar) == ' '){
          currline = (currline+1)%2;
@@ -36,4 +39,8 @@ function type() {
       typedLength++;
       setTimeout(type, charSpeed);
    }
+}
+
+function callHTML(){
+   location.replace("index.html");
 }
